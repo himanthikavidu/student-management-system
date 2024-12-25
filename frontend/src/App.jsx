@@ -9,8 +9,8 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Students</Link>
-        <Link to="/add">Add Student</Link>
+        <Link className='student-view-tab' to="/">Students</Link>
+        <Link className='add-student-tab' to="/add">Add Student</Link>
       </nav>
       <Routes>
         <Route path="/" element={<StudentList />} />
