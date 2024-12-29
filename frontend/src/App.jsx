@@ -8,9 +8,13 @@ import EditStudent from './components/EditStudent';
 function App() {
   return (
     <Router>
-      <nav>
-        <Link className='student-view-tab' to="/">Students</Link>
-        <Link className='add-student-tab' to="/add">Add Student</Link>
+      <nav className="nav-container">
+        <Link className="student-view-tab" to="/">
+          Students
+        </Link>
+        <Link className="add-student-tab" to="/add">
+          Add Student
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<StudentList />} />
@@ -19,6 +23,7 @@ function App() {
       </Routes>
     </Router>
   );
+  
 }
 
 export default App;
